@@ -3,6 +3,7 @@ const app = new Vue (
       el: '#root',
       data: {
          index: 0,
+         addTodo: '',
          todoList: [
             {
                text: 'svegliarsi',
@@ -25,12 +26,12 @@ const app = new Vue (
                text: 'lavarsi i denti',
                done: false,
             },
-         ],
+         ]
       },
 
       methods: {
-         closeTodo() {
-            this.todoList.splice([this.index], 1);
+         closeTodo(index) {
+            this.todoList.splice(index, 1);
          }
       }
    }
