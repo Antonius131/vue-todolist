@@ -14,6 +14,13 @@
 </head>
 <body>
    <div id="root" class="container">
+      <div class="row">
+         <div class="col-12">
+            <div class="list-group" v-for="(text, index) in todoList">
+               <li class="list-group-item">{{ todoList[index].text }}</li>
+            </div>
+         </div>
+      </div>
 
    </div>
 
