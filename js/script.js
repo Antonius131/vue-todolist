@@ -32,6 +32,14 @@ const app = new Vue (
       methods: {
          closeTodo(index) {
             this.todoList.splice(index, 1);
+         },
+
+         addNew(todo) {
+            this.todoList.push({
+                                 text: this.addTodo,
+                                 done: false
+                              });
+            this.addTodo = '';
          }
       }
    }
