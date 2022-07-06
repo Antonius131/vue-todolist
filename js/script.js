@@ -6,19 +6,19 @@ const app = new Vue (
          todoList: [
             {
                text: 'svegliarsi',
-               done: false
+               done: true,
             },
             {
                text: 'bere acqua',
-               done: false
+               done: true,
             },
             {
                text: 'fare la doccia',
-               done: false
+               done: false,
             },
             {
                text: 'fare colazione',
-               done: false
+               done: false,
             },
          ],
       }

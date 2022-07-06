@@ -16,8 +16,8 @@
    <div id="root" class="container">
       <div class="row">
          <div class="col-12">
-            <div class="list-group" v-for="(text, index) in todoList">
-               <li class="list-group-item">{{ todoList[index].text }}</li>
+            <div class="list-group" v-for="(todo, index) in todoList">
+               <li class="list-group-item" :class="(todo.done) ? 'text-decoration-line-through' : ''">{{ todo.text }}</li>
             </div>
          </div>
       </div>
