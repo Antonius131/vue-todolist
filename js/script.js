@@ -20,6 +20,11 @@ const app = new Vue (
                text: 'fare colazione',
                done: false,
             },
+
+            {
+               text: 'lavarsi i denti',
+               done: false,
+            },
          ],
       }
    }

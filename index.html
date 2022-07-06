@@ -14,10 +14,15 @@
 </head>
 <body>
    <div id="root" class="container">
-      <div class="row">
-         <div class="col-12">
+      <div class="row p-5">
+         <div class="col-10">
             <div class="list-group" v-for="(todo, index) in todoList">
                <li class="list-group-item" :class="(todo.done) ? 'text-decoration-line-through' : ''">{{ todo.text }}</li>
+            </div>
+         </div>
+         <div class="col-2">
+            <div class="list-group">
+               <li class="list-group-item text-center" v-for="(todo, index) in todoList">x</li>
             </div>
          </div>
       </div>
