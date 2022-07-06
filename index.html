@@ -22,7 +22,7 @@
          </div>
          <div class="col-2">
             <div class="list-group">
-               <li class="list-group-item text-center" v-for="(todo, index) in todoList">x</li>
+               <li class="list-group-item text-center" v-for="(todo, index) in todoList"><span @click="closeTodo">x</span></li>
             </div>
          </div>
       </div>
