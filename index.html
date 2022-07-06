@@ -28,8 +28,8 @@
       </div>
       <div class="row p-5">
          <div class="col-12">
-            <input type="text" v-model="addTodo">
-            <button type="submit" class="btn btn-primary" @click="addNew(addTodo)">Aggiungi</button>
+            <input type="text" v-model="addTodo" @keyup.enter="addNew(addTodo)">
+            <button type="submit" class="btn btn-outline-dark" @click="addNew(addTodo)">Aggiungi</button>
          </div>
       </div>
    </div>
